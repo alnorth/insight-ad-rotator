@@ -1,0 +1,44 @@
+.adrot_container {
+	width: 744px;
+	height: 300px;
+	cursor: pointer;
+}
+
+.adrot_overlay {
+	background-image: url('/Images/Content/521/319175.png'); /* Would love to do this in pure CSS, but IE won't play ball. */
+	color: white;
+	position: relative;
+	z-index: 3;
+}
+
+.adrot_title {
+	font-weight: bold;
+	padding: 5px;
+	padding-bottom: 2px;
+}
+
+.adrot_description {
+	padding: 5px;
+}
+
+.adrot_images {
+	position: absolute;
+	width: 744px;
+	height: 300px;
+}
+
+.adrot_image {
+	position: absolute;
+}
+
+.adrot_pager {
+	text-align: right;
+	margin-top: -25px;
+	margin-right: 5px;
+	height: 25px;
+}
+
+.adrot_pager_element {
+	margin-left:2px;
+	margin-right:2px;
+}
