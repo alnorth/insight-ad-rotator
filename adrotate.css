@@ -1,6 +1,4 @@
 .adrot_container {
-	width: 744px;
-	height: 300px;
 	cursor: pointer;
 }
 
@@ -23,8 +21,6 @@
 
 .adrot_images {
 	position: absolute;
-	width: 744px;
-	height: 300px;
 }
 
 .adrot_image {

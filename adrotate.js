@@ -9,8 +9,13 @@ function adrot_init(data) {
 
 	var container = $("#" + adrot_data.containerDivID);
 	container.addClass("adrot_container");
+	container.height(adrot_data.imageHeight);
+	container.width(adrot_data.imageWidth);
 	
-	addDiv("adrot_images", container);
+	var imagesDiv = addDiv("adrot_images", container);
+	$(imagesDiv).height(adrot_data.imageHeight);
+	$(imagesDiv).width(adrot_data.imageWidth);
+	
 	var overlay = $(addDiv("adrot_overlay", container));
 	addDiv("adrot_title", overlay);
 	addDiv("adrot_description", overlay);
@@ -104,9 +109,9 @@ function setImage(index, fromPager) {
 
 		var pagerWidth = 0;
 		divOverlay.children(".adrot_pager").children().each( function(){ pagerWidth += $(this).width(); });
-		divOverlay.children(".adrot_description").css("width", (744 - 30 - pagerWidth));
+		divOverlay.children(".adrot_description").css("width", (adrot_data.imageWidth - 30 - pagerWidth));
 		
-		divOverlay.css("top", (300 - divOverlay.height()) + "px");
+		divOverlay.css("top", (adrot_data.imageHeight - divOverlay.height()) + "px");
 	}
 		
 	if(fromPager) {
