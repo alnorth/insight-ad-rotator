@@ -1,12 +1,3 @@
-/*
-TODO
-
-- Pull out all settings that would need to change between installations to be parameters.
-	- Width
-	- Height
-	- URL of background image for overlay
-*/
-
 var adrot_data;
 var adrot_currentlyVisibleEl;
 var adrot_currentlyVisibleIndex;
