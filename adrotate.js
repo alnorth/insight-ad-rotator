@@ -12,11 +12,12 @@ function adrot_init(data) {
 	container.height(adrot_data.imageHeight);
 	container.width(adrot_data.imageWidth);
 	
-	var imagesDiv = addDiv("adrot_images", container);
-	$(imagesDiv).height(adrot_data.imageHeight);
-	$(imagesDiv).width(adrot_data.imageWidth);
+	var imagesDiv = $(addDiv("adrot_images", container));
+	imagesDiv.height(adrot_data.imageHeight);
+	imagesDiv.width(adrot_data.imageWidth);
 	
 	var overlay = $(addDiv("adrot_overlay", container));
+	overlay.css("background-image", "url("+ adrot_data.backgroundImg +")");
 	addDiv("adrot_title", overlay);
 	addDiv("adrot_description", overlay);
 	addDiv("adrot_pager", overlay);

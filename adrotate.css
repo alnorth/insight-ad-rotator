@@ -3,7 +3,6 @@
 }
 
 .adrot_overlay {
-	background-image: url('/Images/Content/521/319175.png'); /* Would love to do this in pure CSS, but IE won't play ball. */
 	color: white;
 	position: relative;
 	z-index: 3;
