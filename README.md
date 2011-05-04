@@ -37,3 +37,7 @@ Values to supply in data:
 	<dt>backgroundImg</dt>
 	<dd>Path of the background image for the area displaying the title, description and pager images. It's suggested that you use the semi-transparent 1 pixel image included in this repo.</dd>
 </dl>
+
+## License
+
+All files in this repository are provided under a BSD license as described in LICENSE.txt.
