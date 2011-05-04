@@ -40,4 +40,4 @@ Values to supply in data:
 
 ## License
 
-All files in this repository are provided under a BSD license as described in LICENSE.txt.
+All files in this repository are provided under the Modified BSD License as described in LICENSE.txt.
