@@ -1,5 +1,6 @@
 
 function InsightAdRotator(options) {
+	"use strict";
 	
 	var imageData = [],
 		currentlyVisibleEl,
@@ -45,13 +46,13 @@ function InsightAdRotator(options) {
 	}
 	
 	function setImage(index, fromPager) {
-		if(index > imageData.length - 1) index = 0;
+		if(index > imageData.length - 1) { index = 0; }
 		
-		if(currentlyVisibleIndex != index) {
+		if(currentlyVisibleIndex !== index) {
 
-			var img = imageData[index];
-			var div = $("#" + options.containerDivID);
-			var divOverlay = div.children(".adrot_overlay");
+			var img = imageData[index],
+				div = $("#" + options.containerDivID),
+				divOverlay = div.children(".adrot_overlay");
 			
 			if(currentlyVisibleEl) {
 				currentlyVisibleEl.css("z-index", 1);
@@ -69,15 +70,15 @@ function InsightAdRotator(options) {
 			
 			div.unbind("click");
 			if(img.link) {
-				if(img.linkTarget == "_blank") {
+				if(img.linkTarget === "_blank") {
 					div.click(function(event) {
-						if(event.target.className != "adrot_pager_element") {
+						if(event.target.className !== "adrot_pager_element") {
 							var newWindow = window.open(img.link, "_blank");
 						}
 					});
 				} else {
 					div.click(function(event) {
-						if(event.target.className != "adrot_pager_element") {
+						if(event.target.className !== "adrot_pager_element") {
 							document.location = img.link;
 						}
 					});
@@ -104,17 +105,18 @@ function InsightAdRotator(options) {
 	function setPageFun(i) {
 		return function() {
 			setImage(i, true);
-		}
+		};
 	}
 
 	function setPager(selectedIndex) {
-		var pagerDiv = $("#" + options.containerDivID + " .adrot_pager");
+		var pagerDiv = $("#" + options.containerDivID + " .adrot_pager"),
+			i;
 		
-		pagerDiv.children().remove();	
-		for(var i = 0; i < imageData.length; i++) {
+		pagerDiv.children().remove();
+		for(i = 0; i < imageData.length; i++) {
 			var imgEl = document.createElement("img");
 			imgEl.className = "adrot_pager_element";
-			imgEl.src = (i == selectedIndex ? options.pagerSelectedImg : options.pagerUnselectedImg);
+			imgEl.src = (i === selectedIndex ? options.pagerSelectedImg : options.pagerUnselectedImg);
 			$(imgEl).click(setPageFun(i));
 			pagerDiv.append(imgEl);
 		}
