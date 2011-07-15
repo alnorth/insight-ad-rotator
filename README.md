@@ -9,7 +9,7 @@ While I am an Insight developer this was written in my own time for use by a cha
 1. Create two media folders. The first will be for the javascript, css and images needed for drawing the rotator, the second will contain the actual images you would like to display.
 1. Upload adrotate.js, adrotate.css, background.png, pager-selected.png, pager-unselected.png to the first folder.
 1. Create a new document and edit the HTML source by clicking on the _Source_ button. Replace the current contents with the HTML in template_document.txt.
-1. Click on the media folder that will contain your images, then right click on the XML icon in the top right corner and select _Copy link location_. Use this to replace \_\_PATH\_FOLDER\_XML\_\_. This is how the rotator knows which images to display.
+1. Click on the media folder that will contain your images, then right click on the XML icon in the top right corner and select _Copy link location_. Use this to replace \_\_PATH\_TO\_FOLDER\_XML\_\_. This is how the rotator knows which images to display.
 1. Replace all the other entries like \_\_PATH\_TO\_CSS\_FILE\_\_ with the correct paths. You can find out the paths of CSS and JS files by clicking on them in the media tab. To find the path of images click on them in the media tab, then right click on the image itself and select _Copy image location_, this works in Firefox anyway, I'm not sure about IE.
 1. Set the image height and width and the other options to what you want and then save and publish the document.
 1. Add the document to a layout wherever you would like it to be displayed on your site.

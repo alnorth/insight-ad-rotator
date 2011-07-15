@@ -3,7 +3,7 @@
 <script type="text/javascript" src="__PATH_TO_JAVASCRIPT_FILE__"></script>
 <script type="text/javascript">
 	InsightAdRotator({
-		xmlUrl: "__PATH_FOLDER_XML__",
+		xmlUrl: "__PATH_TO_FOLDER_XML__",
 		imageHeight: 300,
 		imageWidth: 700,
 		containerDivID: "divAdRotate",
