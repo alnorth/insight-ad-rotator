@@ -11,8 +11,9 @@
 		</style>
 		<script type="text/javascript">
 			$(document).ready(function() {
-				var data = {
-					xmlUrl: "example.xml",
+				// 700x300
+				adrot_init({
+					xmlUrl: "example 700x300.xml",
 					imageHeight: 300,
 					imageWidth: 700,
 					containerDivID: "divAdRotate",
@@ -22,8 +23,21 @@
 					pagerSelectedImg: "../pager-selected.png",
 					pagerUnselectedImg: "../pager-unselected.png",
 					backgroundImg: "../background.png"
-				};
-				adrot_init(data);
+				});
+				
+				// 200x150
+				adrot_init({
+					xmlUrl: "example 200x150.xml",
+					imageHeight: 150,
+					imageWidth: 200,
+					containerDivID: "divAdRotateSmall",
+					timeoutLength: 4000,
+					timeoutLengthPostPager: 7000,
+					animationDuration: 500,
+					pagerSelectedImg: "../pager-selected.png",
+					pagerUnselectedImg: "../pager-unselected.png",
+					backgroundImg: "../background.png"
+				});
 			});
 		</script>
 	</head>
@@ -37,6 +51,8 @@
 		<p>Quisque volutpat condimentum velit. <i>Lorem ipsum dolor sit amet, consectetur adipiscing elit</i>. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. <b>Maecenas mattis</b>. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. <b>Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh</b>. Suspendisse in justo eu magna luctus suscipit. </p>
 
 		<p>Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. <b>Etiam ultrices</b>. Sed non quam. In vel mi sit amet augue congue elementum. <b>Vestibulum sapien</b>. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices enim. Curabitur sit amet mauris. </p>
+		
+		<div id="divAdRotateSmall"> </div>
 
 		<p>Morbi in dui quis est pulvinar ullamcorper. Nulla facilisi. Integer lacinia sollicitudin massa. Cras metus. Sed aliquet risus a tortor. Integer id quam. Morbi mi. Quisque nisl felis, venenatis tristique, dignissim in, ultrices sit amet, augue. Proin sodales libero eget ante. Nulla quam. Aenean laoreet. </p>
 	</body>
