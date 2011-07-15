@@ -148,5 +148,7 @@ function InsightAdRotator(options) {
 		});
 	}
 	
-	init();
+	$(document).ready(function() {
+		init();
+	});
 }
