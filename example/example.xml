@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gallery>
+	<album id="128845" title="Banner" description="" lgPath="../example/" tnPath="../Thumbnail/">
+		<img src="318907.png" title="1:advert 1" caption="This is an advert!" tn="advert 1.jpg" link="http://google.com" target="_blank"></img>
+		<img src="318906.png" title="2:advert 2" caption="This is another image" tn="advert 2.jpg" link="http://software.alnorth.com" target="_self"></img>
+		<img src="318902.png" title="3:advert 3" caption="Yet another one" tn="advert 3.jpg" link="http://github.com/alnorth29" target="_blank"></img>
+	</album>
+</gallery>
