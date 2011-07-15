@@ -1,0 +1,18 @@
+<link rel="stylesheet" type="text/css" href="__PATH_TO_CSS_FILE__" />
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="__PATH_TO_JAVASCRIPT_FILE__"></script>
+<script type="text/javascript">
+	InsightAdRotator({
+		xmlUrl: "__PATH_FOLDER_XML__",
+		imageHeight: 300,
+		imageWidth: 700,
+		containerDivID: "divAdRotate",
+		timeoutLength: 4000,
+		timeoutLengthPostPager: 7000,
+		animationDuration: 500,
+		pagerSelectedImg: "__PATH_TO_PAGER_SELECTED_IMAGE__",
+		pagerUnselectedImg: "__PATH_TO_PAGER_UNSELECTED_IMAGE__",
+		backgroundImg: "__PATH_TO_BACKGROUND_IMAGE__"
+	});
+</script>
+<div id="divAdRotate"> </div>
